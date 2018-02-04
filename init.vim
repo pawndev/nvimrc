@@ -44,6 +44,7 @@ Plug 'dietsche/vim-lastplace'
 Plug 'ervandew/supertab'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
 
