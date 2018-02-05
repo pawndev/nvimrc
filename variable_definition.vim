@@ -26,6 +26,9 @@ set splitright
 set encoding=utf-8
 set hidden
 set number
+set showbreak=↪\ 
+set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
+set list!
 " set filetype plugin indent on
 set expandtab ts=2 sw=2 ai
 set pastetoggle=<F2>
