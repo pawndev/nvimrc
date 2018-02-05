@@ -23,7 +23,7 @@ nnoremap <leader>s :call Save()<CR>
 nnoremap <silent> <leader>n :Explore<CR>
 nnoremap <silent> <leader>f :Files<CR>
 nnoremap <silent> <leader>b :Buffers<CR>
-nnoremap <silent> <leader>h :History<CR>
+nnoremap <silent> <leader>i :History<CR>
 
 nnoremap <leader>v :call LanguageClient_textDocument_hover()<CR>
 nnoremap <leader>d :call LanguageClient_textDocument_definition()<CR>
@@ -42,6 +42,10 @@ nnoremap <silent><leader>f <Esc>:FZF -q <C-R>=expand("<cword>")<CR>
 
 nnoremap <silent><leader>g <Esc>:Ag <C-R>=expand("<cword>")<CR>
 vnoremap <silent><leader>g <Esc>:Ag <C-R>=<SID>getVisualSelection()<CR>
+
+nnoremap <silent><C-o> <Esc>:FZFMru<CR>
+vnoremap <silent><C-o> <Esc>:FZFMru<CR>
+inoremap <silent><C-o> <Esc>:FZFMru<CR>
 
 nnoremap <silent><C-p> <Esc>:FZF<CR>
 vnoremap <silent><C-p> <Esc>:FZF<CR>

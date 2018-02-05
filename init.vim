@@ -15,6 +15,7 @@ Plug 'docunext/closetag.vim'
 " Fuzzy finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
+Plug 'pbogut/fzf-mru.vim'
 
 " Languages
 Plug 'pangloss/vim-javascript'
