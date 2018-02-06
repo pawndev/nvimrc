@@ -37,11 +37,11 @@ nnoremap <silent> ]] :call NextListItem()<CR>
 
 " Custom bindings
 
-vnoremap <silent><leader>f <Esc>:FZF -q <C-R>=<SID>getVisualSelection()<CR>
+vnoremap <silent><leader>f <Esc>:FZF -q <C-R>=GetVisualSelection()<CR>
 nnoremap <silent><leader>f <Esc>:FZF -q <C-R>=expand("<cword>")<CR>
 
 nnoremap <silent><leader>g <Esc>:Ag <C-R>=expand("<cword>")<CR>
-vnoremap <silent><leader>g <Esc>:Ag <C-R>=<SID>getVisualSelection()<CR>
+vnoremap <silent><leader>g <Esc>:Ag <C-R>=GetVisualSelection()<CR>
 
 nnoremap <silent><C-o> <Esc>:FZFMru<CR>
 vnoremap <silent><C-o> <Esc>:FZFMru<CR>
