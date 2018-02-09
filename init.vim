@@ -1,6 +1,8 @@
-source $XDG_CONFIG_HOME/nvim/variable_definition.vim
+" config.vim: Some vim/nvim configuration.
+source $XDG_CONFIG_HOME/nvim/config.vim
+" function.vim: Custom nvim function.
 source $XDG_CONFIG_HOME/nvim/function.vim
-
+" Install external plugin.
 call plug#begin('~/.config/nvim/plugged')
 
 " LSP Client
@@ -49,7 +51,10 @@ Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
 
+" Define the colorscheme.
 colorscheme nord
 
+" plugin_config.vim: Plugin configuration.
 source $XDG_CONFIG_HOME/nvim/plugin_config.vim
+" bindings.vim: Custom vim bindings.
 source $XDG_CONFIG_HOME/nvim/bindings.vim

@@ -19,7 +19,6 @@ set smartcase
 set softtabstop=2
 set splitright
 set tabstop=2
-"set termguicolors
 set ttimeoutlen=50
 set t_Co=256
 set splitright

@@ -62,16 +62,6 @@ nmap <silent> <M-down> :call MoveLines('+1')<CR>
 vmap <silent> <M-up> :call MoveLines('-2')<CR>gv
 vmap <silent> <M-down> :call MoveLines('+1')<CR>gv
 
-"nnoremap <M-j> :m .+1<CR>
-"nnoremap <M-k> :m .-2<CR>
-"inoremap <M-j> <Esc>:m .+1<CR>==gi
-"inoremap <M-k> <Esc>:m .-2<CR>==gi
-"vnoremap <M-j> :m '>+1<CR>gv=gv
-"vnoremap <M-k> :m '<-2<CR>gv=gv
-
-"noremap <silent> <M-up> :call swapUp()<CR>
-"noremap <silent> <M-down> :call swapDown()<CR>
-
 map <leader>ss :setlocal spell!<cr>
 map <leader>sv :vsplit<cr>
 map <leader>sh :split<cr>

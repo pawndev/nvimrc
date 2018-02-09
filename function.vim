@@ -33,12 +33,14 @@ function NextListItem()
   endif
 endfunction
 
+" Call the save command from vim
 function Save()
   :w
 endfunction
 
 " Chris
 
+" Function that move the `help` panel to right vsplit
 if has('autocmd')
   function! ILikeHelpToTheRight()
     if !exists('w:help_is_moved') || w:help_is_moved != "right"
@@ -52,6 +54,7 @@ if has('autocmd')
   augroup END
 endif
 
+" Function that get the content select in visual mode.
 function! GetVisualSelection()
     let [line_start, column_start] = getpos("'<")[1:2]
     let [line_end, column_end] = getpos("'>")[1:2]
@@ -67,6 +70,7 @@ function! GetVisualSelection()
     return join(lines, "\n")
 endfunction
 
+" Function that move the current line to `offset`
 function! MoveLines(offset) range
     let l:col = virtcol('.')
     let l:offset = str2nr(a:offset)
