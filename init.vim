@@ -28,6 +28,10 @@ Plug 'fatih/vim-go'
 Plug 'posva/vim-vue'
 Plug 'hashivim/vim-terraform'
 Plug 'rust-lang/rust.vim'
+Plug 'vim-ruby/vim-ruby'
+Plug 'elixir-editors/vim-elixir'
+Plug 'ekalinin/Dockerfile.vim'
+Plug 'StanAngeloff/php.vim'
 
 " Snippets
 Plug 'SirVer/ultisnips'
