@@ -43,9 +43,9 @@ nnoremap <silent><leader>f <Esc>:FZF -q <C-R>=expand("<cword>")<CR>
 nnoremap <silent><leader>g <Esc>:Ag <C-R>=expand("<cword>")<CR>
 vnoremap <silent><leader>g <Esc>:Ag <C-R>=GetVisualSelection()<CR>
 
-nnoremap <silent><C-o> <Esc>:FZFMru<CR>
-vnoremap <silent><C-o> <Esc>:FZFMru<CR>
-inoremap <silent><C-o> <Esc>:FZFMru<CR>
+nnoremap <silent><C-F> <Esc>:FZFMru<CR>
+vnoremap <silent><C-F> <Esc>:FZFMru<CR>
+inoremap <silent><C-F> <Esc>:FZFMru<CR>
 
 nnoremap <silent><C-p> <Esc>:FZF<CR>
 vnoremap <silent><C-p> <Esc>:FZF<CR>
