@@ -17,17 +17,16 @@ set scrolloff=3
 set shiftwidth=2
 set smartcase
 set softtabstop=2
-set splitright
 set tabstop=2
 set ttimeoutlen=50
 set t_Co=256
-set splitright
 set encoding=utf-8
-set hidden
 set number
 set showbreak=↪\ 
 set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
 set list!
+set splitright
+"set splitbelow
 " set filetype plugin indent on
 set expandtab ts=2 sw=2 ai
 set pastetoggle=<F2>
