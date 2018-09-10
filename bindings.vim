@@ -13,9 +13,8 @@ nnoremap <c-/> :NERDCommenterToggle
 inoremap <c-/> :NERDCommenterToggle
 vnoremap <c-/> :NERDCommenterToggle
 " nvim-completion-manager
-"inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-"inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-"inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <Tab> pumvisible()? "\<C-n>" : "\<Tab>"
+"inoremap <expr> <S-Tab> pumvisible()? "\<C-p>" : "\<S-Tab>"
 
 " Thomas custom binding
 nnoremap <leader>s :call Save()<CR>
@@ -28,6 +27,10 @@ nnoremap <silent> <leader>i :History<CR>
 nnoremap <leader>v :call LanguageClient_textDocument_hover()<CR>
 nnoremap <leader>d :call LanguageClient_textDocument_definition()<CR>
 nnoremap <leader>r :call LanguageClient_textDocument_rename()<CR>
+
+nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
+nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
+nnoremap <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
 
 nnoremap <silent> <leader>c :call ToggleQfList()<CR>
 nnoremap <silent> <leader>x :call ToggleLocList()<CR>

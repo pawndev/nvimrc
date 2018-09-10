@@ -7,6 +7,7 @@ set expandtab
 set foldcolumn=2
 set history=1000
 set hlsearch
+"set hidden
 set ignorecase
 set incsearch
 set linebreak
@@ -30,7 +31,8 @@ set splitright
 " set filetype plugin indent on
 set expandtab ts=2 sw=2 ai
 set pastetoggle=<F2>
-let g:loaded_python3_provider=1
+let g:python_host_prog = '/usr/local/bin/python2'
+let g:python3_host_prog = '/usr/local/bin/python3'
 set laststatus=2
 
 hi clear FoldColumn
